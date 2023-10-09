@@ -5,9 +5,9 @@ import keras.backend as K
 from keras.models import Model
 from keras.layers import Lambda, Input, Layer, Dense
 
-from upper.core import Agent
-from upper.policy import EpsGreedyQPolicy, GreedyQPolicy
-from upper.utils import *
+from rl.core import Agent
+from rl.policy import EpsGreedyQPolicy, GreedyQPolicy
+from rl.utils import *
 
 
 def mean_q(y_true, y_pred):

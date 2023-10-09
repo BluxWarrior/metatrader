@@ -1,7 +1,7 @@
 from __future__ import division
 import numpy as np
 
-from upper.utils import *
+from rl.utils import *
 
 
 class Policy(object):
@@ -295,7 +295,7 @@ class BoltzmannGumbelQPolicy(Policy):
 
     BGE is invariant with respect to the mean of the rewards but not their
     variance. The parameter C, which defaults to 1, can be used to correct for
-    this, and should be set to the least upper bound on the standard deviation
+    this, and should be set to the least rl bound on the standard deviation
     of the rewards.
 
     BGE is only available for training, not testing. For testing purposes, you

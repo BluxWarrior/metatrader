@@ -53,11 +53,11 @@ class FeatureExtractor:
     #     self.df['obv_signal'] = difference
     #     self.df['obv_cheat'] = np.gradient(difference)
 
-    #     upper, middle, lower = talib.BBANDS(self.close, timeperiod=20, nbdevup=2, nbdevdn=2, matype=0)
+    #     rl, middle, lower = talib.BBANDS(self.close, timeperiod=20, nbdevup=2, nbdevdn=2, matype=0)
 
     #     self.df['dn'] = lower
     #     self.df['mavg'] = middle
-    #     self.df['up'] = upper
+    #     self.df['up'] = rl
     #     self.df['pctB'] = (self.close - self.df.dn) / (self.df.up - self.df.dn)
     #     rsi14 = talib.RSI(self.close, 14)
     #     self.df['rsi14'] = rsi14

@@ -5,7 +5,7 @@ from copy import deepcopy
 import numpy as np
 from keras.callbacks import History
 
-from upper.callbacks import (
+from rl.callbacks import (
     CallbackList,
     TestLogger,
     TrainEpisodeLogger,
@@ -69,7 +69,7 @@ class Agent(object):
                 this is likely going to slow down training significantly and is thus intended to be
                 a debugging instrument.
             nb_max_start_steps (integer): Number of maximum steps that the agent performs at the beginning
-                of each episode using `start_step_policy`. Notice that this is an upper limit since
+                of each episode using `start_step_policy`. Notice that this is an rl limit since
                 the exact number of steps to be performed is sampled uniformly from [0, max_start_steps]
                 at the beginning of each episode.
             start_step_policy (`lambda observation: action`): The policy
@@ -261,7 +261,7 @@ class Agent(object):
                 this is likely going to slow down training significantly and is thus intended to be
                 a debugging instrument.
             nb_max_start_steps (integer): Number of maximum steps that the agent performs at the beginning
-                of each episode using `start_step_policy`. Notice that this is an upper limit since
+                of each episode using `start_step_policy`. Notice that this is an rl limit since
                 the exact number of steps to be performed is sampled uniformly from [0, max_start_steps]
                 at the beginning of each episode.
             start_step_policy (`lambda observation: action`): The policy
